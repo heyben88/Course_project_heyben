@@ -16,7 +16,11 @@ This is an R Markdown document for my course project.
 
 ## Commit and push and include
 
+I commit and push to github
 image ![](commit and push.png)
+
+My github page for this project:
+
 
 
 
