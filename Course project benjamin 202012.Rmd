@@ -11,19 +11,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Intro course Project
 
-This is an R Markdown document for my course project. 
+This is an R Markdown document for my course project. It will be filled with printscreen of the installed sofwares, of my github accounts and of itself.
 
 
-## Commit and push and include
+## Commit and push and include on my github depository
 
 I commit and push to github
-image ![](commit and push.png)
+
+![](commit and push.png)
 
 My github page for this project:
-image ![](github of this project.png)
 
+![](github of this project.png)
 
+## This document and other installation
 
+I succesfully installed R and R studio.  
+![](installed software.png)
+
+## previous test from the cloned document
 
 ```{r cars}
 summary(cars)
