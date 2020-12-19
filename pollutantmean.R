@@ -38,7 +38,7 @@ complete<-function(directory,id=1:332){
       listOK=listOK & !is.na(data_i[j])
   }
   numb_each_full=rbind(numb_each_full,c(i,length(data_pol[listOK])))
-  
+  colnames(numb_each_full)<-c("id","noobs")
   }
   numb_each_full 
   
@@ -48,13 +48,11 @@ complete<-function(directory,id=1:332){
 library(data.table) 
 corr<-function(directory,threshold=0,id=1:332){
   size_of_good_value=complete(directory)
-  print(size_of_good_value)
   i=1
   sol<-vector()
   for (i in id)
     {if(size_of_good_value[i,2]>threshold)
-          { print(c("i",i))
-            print(size_of_good_value[1,2])
+          { 
             if (i<10) 
                 {addcar="00"}
                 else if (i<100)
@@ -69,6 +67,5 @@ corr<-function(directory,threshold=0,id=1:332){
                sol<- c(sol,cor(data_propre_i[,1],data_propre_i[,2]))}
             }
   }
-  print(sol)
-  c(min(sol),median(sol),mean(sol),max(sol))
+  sol
 }
